@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="HomeForm" prefHeight="952.0" prefWidth="1400.0" stylesheets="@assests/styles/HomeStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.d24hostel.controller.HomeFormController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="49.0" prefWidth="1400.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="1223.0" layoutY="12.0" text="Time :" textFill="#26059d">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="1017.0" layoutY="12.0" text="Date:" textFill="#26059d">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="1075.0" layoutY="12.0" text="2022-05-22">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="1285.0" layoutY="12.0" text="02:53:45">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Text fill="#ff7d00" layoutX="20.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Hostel Management System">
+               <font>
+                  <Font name="Century Gothic" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="MainAnchorPane" layoutX="106.0" layoutY="50.0" prefHeight="902.0" prefWidth="1400.0" style="-fx-background-color: #ffffff;" />
+      <AnchorPane fx:id="NameSideAnchorPane" layoutX="103.0" layoutY="50.0" onMouseExited="#NameSideOnAction" prefHeight="902.0" prefWidth="313.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton id="ManageRoomButton" fx:id="btnManageRooms" layoutY="138.0" onMouseClicked="#btnButtonOnAction" prefHeight="80.0" prefWidth="329.0" styleClass="menuItem" text="Manage Rooms">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="RegisterStudentButton" fx:id="btnRegStudents" layoutX="1.0" layoutY="207.0" onMouseClicked="#btnButtonOnAction" prefHeight="80.0" prefWidth="331.0" styleClass="menuItem" text="Register Students">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="ManageStudentButton" fx:id="btnManageStudents" layoutX="1.0" layoutY="287.0" onMouseClicked="#btnButtonOnAction" prefHeight="80.0" prefWidth="330.0" styleClass="menuItem" text="Manage Students">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="ReportsButton" fx:id="btnManageRevDetails" layoutX="1.0" layoutY="367.0" onMouseClicked="#btnButtonOnAction" prefHeight="80.0" prefWidth="331.0" styleClass="menuItem" text="Manage Reservation Details">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="LogOutButton" fx:id="btnLogout" layoutY="570.0" onMouseClicked="#btnButtonOnAction" prefHeight="80.0" prefWidth="333.0" styleClass="menuItem" text="Log out">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="icnSideAnchorPane" layoutX="3.0" layoutY="50.0" onMouseEntered="#iconSideOnAction" prefHeight="902.0" prefWidth="104.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="50.0" layoutX="22.0" layoutY="35.0" onMouseClicked="#imgDashBoardOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/dashboard.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="49.0" fitWidth="48.0" layoutX="23.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/door-room-hotel-vacation-holidays-travel-60388.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="50.0" layoutX="26.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/people.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="50.0" layoutX="24.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/reservation-1890234-1600608.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="50.0" layoutX="26.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/door-149-267415.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="50.0" layoutX="26.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assests/images/2729900.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Line endX="838.5" endY="-0.9999847412109375" layoutX="655.0" layoutY="50.0" startX="-656.0000610351562" startY="-0.9999809265136719" stroke="#613601" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

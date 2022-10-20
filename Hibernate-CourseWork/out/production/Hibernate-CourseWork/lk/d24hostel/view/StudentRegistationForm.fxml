@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXTextField fx:id="txtRegisterId" layoutX="99.0" layoutY="37.0" prefHeight="44.0" prefWidth="298.0" promptText="Registration ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbStudent" focusColor="BLACK" layoutX="99.0" layoutY="123.0" prefHeight="50.0" prefWidth="298.0" promptText="Select Student" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cmbRoom" focusColor="BLACK" layoutX="424.0" layoutY="123.0" prefHeight="50.0" prefWidth="298.0" promptText="Select Room" unFocusColor="BLACK" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="67.0" layoutX="101.0" layoutY="234.0" stroke="#ae4803" strokeType="INSIDE" strokeWidth="2.0" width="294.0" />
+      <JFXTextField layoutX="116.0" layoutY="242.0" prefHeight="44.0" prefWidth="252.0" promptText="Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="99.0" layoutY="204.0" text="Name" textFill="#26059d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="67.0" layoutX="101.0" layoutY="365.0" stroke="#ae4803" strokeType="INSIDE" strokeWidth="2.0" width="294.0" />
+      <JFXTextField layoutX="122.0" layoutY="375.0" prefHeight="44.0" prefWidth="252.0" promptText="Address">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="99.0" layoutY="335.0" text="Address" textFill="#26059d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="67.0" layoutX="101.0" layoutY="481.0" stroke="#ae4803" strokeType="INSIDE" strokeWidth="2.0" width="294.0" />
+      <Label layoutX="93.0" layoutY="451.0" text="Gender" textFill="#26059d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="74.0" layoutX="95.0" layoutY="606.0" stroke="#ae4803" strokeType="INSIDE" strokeWidth="2.0" width="294.0" />
+      <Label layoutX="96.0" layoutY="576.0" text="DOB" textFill="#26059d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox layoutX="115.0" layoutY="491.0" prefHeight="44.0" prefWidth="266.0" promptText="Gender" />
+      <JFXDatePicker defaultColor="#26059d" layoutX="112.0" layoutY="614.0" prefHeight="44.0" prefWidth="260.0" promptText="DOB" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="67.0" layoutX="441.0" layoutY="233.0" stroke="#ae4803" strokeType="INSIDE" strokeWidth="2.0" width="294.0" />
+      <JFXTextField fx:id="txtRoomType" layoutX="462.0" layoutY="243.0" prefHeight="44.0" prefWidth="252.0" promptText="Type">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="442.0" layoutY="203.0" text="Room Type" textFill="#26059d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="67.0" layoutX="441.0" layoutY="364.0" stroke="#ae4803" strokeType="INSIDE" strokeWidth="2.0" width="294.0" />
+      <JFXTextField fx:id="txtKeymoney" layoutX="462.0" layoutY="374.0" prefHeight="22.0" prefWidth="252.0" promptText="KeyMoney">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="446.0" layoutY="334.0" text="KeyMoney" textFill="#26059d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="67.0" layoutX="441.0" layoutY="481.0" stroke="#ae4803" strokeType="INSIDE" strokeWidth="2.0" width="294.0" />
+      <JFXTextField fx:id="txtQty" layoutX="462.0" layoutY="491.0" prefHeight="37.0" prefWidth="252.0" promptText="Qty">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="446.0" layoutY="450.0" text="Qty" textFill="#26059d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="531.0" layoutX="776.0" layoutY="45.0" stroke="#ae4803" strokeType="INSIDE" strokeWidth="3.0" width="464.0" />
+      <Label layoutX="858.0" layoutY="89.0" text="ROOM STATUS" textFill="#b23939">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAvailable" layoutX="928.0" layoutY="243.0" text="Available" textFill="#26059d">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="754.0" layoutY="607.0" prefHeight="58.0" prefWidth="220.0" style="-fx-background-color: #0ae415;" text="Register Student" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1032.0" layoutY="607.0" prefHeight="58.0" prefWidth="220.0" style="-fx-background-color: red;" text="Clear" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtStatus" layoutX="462.0" layoutY="616.0" prefHeight="55.0" prefWidth="252.0" promptText="Paid / Non-Paid or Amount">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="439.0" layoutY="576.0" text="Status" textFill="#26059d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="825.0" layoutY="441.0" text="All Rooms" textFill="#26059d">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1116.0" layoutY="441.0" text="All Rooms" textFill="#26059d">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="959.0" layoutY="441.0" text="All Rooms" textFill="#26059d">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAllRoom" layoutX="832.0" layoutY="497.0" text="00" textFill="#26059d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUsedRoom" layoutX="974.0" layoutY="497.0" text="00" textFill="#26059d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRemainRoom" layoutX="1136.0" layoutY="497.0" text="00" textFill="#26059d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
